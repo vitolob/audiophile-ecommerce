@@ -11,10 +11,13 @@ const Button: FC<ButtonProps> = ({
   ...rest
 }) => {
   const baseClassList = "px-6 py-3 tracking-[1px] text-xs font-bold";
-  const defaultClassList = "bg-white border border-black";
+  const defaultClassList =
+    "bg-white hover:bg-dark hover:text-white border border-black";
 
   let variantClassList =
-    variant === "primary" ? "bg-orange text-white" : defaultClassList;
+    variant === "primary"
+      ? "bg-orange hover:bg-orange-light text-white"
+      : defaultClassList;
 
   const combinedClasses = `${baseClassList} ${variantClassList} ${
     className || ""
