@@ -1,5 +1,6 @@
 import Button from "@/components/atoms/Button";
 import ArrowButton from "@/components/atoms/ArrowButton";
+import TextInput from "@/components/atoms/TextInput";
 
 export default function Home() {
   return (
@@ -11,7 +12,12 @@ export default function Home() {
           See Product
         </Button>
       </div>
-      <ArrowButton>Shop</ArrowButton>
+      <div>
+        <ArrowButton>Shop</ArrowButton>
+      </div>
+      <div>
+        <TextInput fieldLabel="Name" placeholder="Insert your name" />
+      </div>
     </main>
   );
 }
