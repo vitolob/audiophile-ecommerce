@@ -1,6 +1,7 @@
 import Button from "@/components/atoms/Button";
 import ArrowButton from "@/components/atoms/ArrowButton";
 import TextInput from "@/components/atoms/TextInput";
+import RadioButton from "@/components/atoms/RadioButton";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div>
         <TextInput fieldLabel="Name" placeholder="Insert your name" />
+      </div>
+      <div>
+        <RadioButton fieldLabel="e-Money" activeState={true} />
       </div>
     </main>
   );

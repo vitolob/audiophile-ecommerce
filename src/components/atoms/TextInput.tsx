@@ -13,7 +13,7 @@ const TextInput: FC<TextInputProps> = ({ fieldLabel, errorState, ...rest }) => {
       <input
         type="text"
         {...rest}
-        className={`py-2 px-4 text-sm font-semibold border border-[#CFCFCF] rounded-lg placeholder:opacity-40 ${
+        className={`min-w-[210px] py-2 px-4 text-sm font-semibold border border-[#CFCFCF] rounded-lg placeholder:opacity-40 ${
           errorState ? "focus:outline-[#CD2C2C]" : "focus:outline-orange"
         }`}
       />
