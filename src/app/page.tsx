@@ -5,7 +5,7 @@ import RadioButton from "@/components/atoms/RadioButton";
 
 export default function Home() {
   return (
-    <main>
+    <main className="ml-2">
       Audiophile E-commerce
       <div>
         <Button variant="primary">See Product</Button>
@@ -19,8 +19,8 @@ export default function Home() {
       <div>
         <TextInput fieldLabel="Name" placeholder="Insert your name" />
       </div>
-      <div>
-        <RadioButton fieldLabel="e-Money" activeState={true} />
+      <div className="mt-1">
+        <RadioButton fieldLabel="e-Money" />
       </div>
     </main>
   );
